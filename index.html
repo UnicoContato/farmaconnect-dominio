@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droga Mais</title>
+    <meta name="description" content="Droga Mais - Cuidando de você com qualidade e preços acessíveis.">
+    <meta property="og:title" content="Droga Mais">
+    <meta property="og:description" content="Cuidando de você com qualidade e preços acessíveis.">
+    <meta property="og:image" content="https://drogariamaiskiveafarma.com.br/img/3.JPG">
+    <meta property="og:url" content="https://drogariamaiskiveafarma.com.br/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#b70031',
+                            dark: '#8a0025'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-transform duration-300 bg-white/70 backdrop-blur-md border-b border-white/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary tracking-tight">DROGAMAIS</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-primary font-medium transition-colors">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-primary font-medium transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary font-medium transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-primary font-medium transition-colors">Galeria</a>
+                    <a href="#contato" class="text-gray-700 hover:text-primary font-medium transition-colors">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5585986224607" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-green-500/30">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Pedir Pelo WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-red-50">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-red-50">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-red-50">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-red-50">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-red-50">Contato</a>
+                <a href="https://wa.me/5585986224607" target="_blank" class="mt-4 flex justify-center items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full font-semibold transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Peça pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('img/3.JPG');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto reveal">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-md">Droga Mais</h1>
+            <p class="text-xl md:text-3xl text-gray-200 mb-10 font-light drop-shadow">Cuidando de você!</p>
+            <a href="https://wa.me/5585986224607" target="_blank" class="inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-white text-lg md:text-xl px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl shadow-primary/40">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Faça seu Pedido
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 relative overflow-hidden bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 inline-block relative after:content-[''] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">Sobre Nós</h2>
+            <div class="bg-gray-50/50 backdrop-blur-sm border border-gray-100 p-8 md:p-12 rounded-3xl shadow-lg mt-12 text-left md:text-center space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>A Droga Mais é uma empresa dedicada ao cuidado com a saúde e ao bem-estar da população, oferecendo produtos farmacêuticos, cosméticos e itens de higiene com qualidade e preços acessíveis. A empresa atua no comércio varejista de medicamentos, sempre buscando atender seus clientes com responsabilidade, confiança e compromisso com a saúde.</p>
+                <p>Nosso objetivo é facilitar o acesso da comunidade a produtos essenciais para o dia a dia, garantindo atendimento humanizado e orientado para as necessidades de cada cliente. Trabalhamos com medicamentos, produtos de perfumaria, higiene pessoal e outros itens relacionados ao cuidado e à qualidade de vida.</p>
+                <p>A Droga Mais acredita que saúde deve ser acessível a todos. Por isso, buscamos constantemente oferecer um atendimento próximo, preços justos e um ambiente confiável para que nossos clientes encontrem tudo o que precisam em um só lugar. Com seriedade, transparência e dedicação, seguimos trabalhando para ser uma referência em atendimento farmacêutico e conveniência para a comunidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 inline-block relative after:content-[''] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">Nossos Serviços</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white/80 backdrop-blur-lg border border-white p-10 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="currentColor">
+                            <path fill="none" d="M0 0H24V24H0z" />
+                            <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Medicamentos</h3>
+                    <p class="text-gray-600">Ampla variedade de medicamentos de referência, genéricos e similares para o seu tratamento completo.</p>
+                </div>
+                
+                <div class="bg-white/80 backdrop-blur-lg border border-white p-10 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve">
+                        <g>
+                            <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" />
+                            <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Perfumaria</h3>
+                    <p class="text-gray-600">As melhores marcas em dermocosméticos, higiene pessoal e itens de beleza para você se cuidar todos os dias.</p>
+                </div>
+
+                <div class="bg-white/80 backdrop-blur-lg border border-white p-10 rounded-3xl shadow-xl hover:-translate-y-2 transition-transform duration-300 text-center">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Atendimento</h3>
+                    <p class="text-gray-600">Equipe qualificada e pronta para oferecer um atendimento humanizado, seguro e com agilidade para nossa comunidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 inline-block relative after:content-[''] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-primary after:rounded-full">Galeria</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="img/1.jpg" alt="Interior da Loja" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="img/2.JPG" alt="Corredores da Loja" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="img/3.JPG" alt="Fachada da Loja" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="img/4.JPG" alt="Dermocosméticos" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-10 md:p-16 flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8 inline-block relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-1 after:bg-primary after:rounded-full">Informações e Localização</h2>
+                        
+                        <div class="space-y-6 text-gray-700">
+                            <div class="flex items-start">
+                                <span class="font-bold w-32 text-gray-900">Empresa:</span>
+                                <span>REDE FARMA DO BRASIL LTDA</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="font-bold w-32 text-gray-900">CNPJ:</span>
+                                <span>17.430.762/0001-20</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="font-bold w-32 text-gray-900">Endereço:</span>
+                                <span>Av. Pres. Vargas, 391<br>Centro - Araruna, PR<br>CEP: 87.260-000</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="font-bold w-32 text-gray-900">Telefone:</span>
+                                <span>(44) 9935-9398</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="font-bold w-32 text-gray-900">E-mail:</span>
+                                <span class="break-all">REDEFARMADOBRASIL@HOTMAIL.COM</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-10">
+                            <a href="https://wa.me/5585986224607" target="_blank" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors shadow-lg">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                Chamar no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-[400px] lg:h-auto w-full">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3646.841264305686!2d-52.4962731!3d-23.9306744!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed6fd1a4a739c7%3A0x5fea4b6e7057179e!2sKiveafarma!5e0!3m2!1spt-BR!2sbr!4v1775580491356!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-xl font-bold text-white block mb-2">Droga Mais</span>
+                <p class="text-sm">REDE FARMA DO BRASIL LTDA - CNPJ: 17.430.762/0001-20</p>
+                <p class="text-sm mt-1">&copy; 2026 Todos os direitos reservados.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" id="open-modal" class="text-sm hover:text-white transition-colors">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 z-[60] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="modal-overlay"></div>
+        <div class="relative bg-white rounded-2xl w-full max-w-2xl max-h-[80vh] overflow-y-auto shadow-2xl p-8 transform transition-all">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900">Política de Privacidade</h3>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="text-gray-600 space-y-4">
+                <p>A sua privacidade é importante para nós. É política da Droga Mais respeitar a sua privacidade em relação a qualquer informação que possamos coletar em nosso site institucional.</p>
+                <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço, fazendo-o por meios justos e legais, com o seu conhecimento e consentimento.</p>
+                <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei. Nosso site pode ter links para sites externos que não são operados por nós.</p>
+                <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button id="close-modal-btn" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-2 rounded-lg font-medium transition-colors">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

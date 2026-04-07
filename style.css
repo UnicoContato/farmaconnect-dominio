@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -38,3 +39,45 @@ html {
     background: #00A8CC;
     border-radius: 10px;
 }
+=======
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1s, transform 1s;
+}
+
+.is-visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00A8CC;
+    border-radius: 10px;
+}
+>>>>>>> 0a07578d01bcf985e5ca80cc59771a8a6de6d1c0
